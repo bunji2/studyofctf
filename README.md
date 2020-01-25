@@ -1,6 +1,6 @@
 # 問題
 
-問題ファイル：[問題ファイル](https://github.com/bunji2/studyofctf/blob/master/problems.7z)
+問題ファイル：[問題ファイル](https://github.com/bunji2/studyofctf/raw/master/problems.7z)
 
 7zip で暗号化されています。解凍パスワードは SLACK の方に載ってます。
 

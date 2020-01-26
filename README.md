@@ -1,10 +1,17 @@
 # 挑戦状！
 
-問題ファイル：[問題ファイル](https://github.com/bunji2/studyofctf/raw/master/problems.7z)
+問題ファイル：[problems2.7z](https://github.com/bunji2/studyofctf/raw/master/problems2.7z)
+
+SHA256 digest = 529826190f5473188299d3047f30853228b5f7aec82c17627ebab9623a0dbe66
+
+
+旧問題ファイル：[problems.7z](https://github.com/bunji2/studyofctf/raw/master/problems.7z)
 
 SHA256 digest = 21b3529f4d5d10a8f7143c8036d9a0f1340fd4c1b8ade2ea897aaa7a311f9038
 
 7zip で暗号化されています。解凍パスワードは SLACK の方に載ってます。
+
+problems.7z は一部環境で正常に動作しないようなので problems2.7z をお使い下さい。
 
 ## problem3_kakutake
 

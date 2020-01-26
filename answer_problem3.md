@@ -35,6 +35,15 @@ ELF 形式なので実行ファイルだとわかりました。ついでに ldd
 
 何も起きません。
 
+strings コマンドで flag 関係の文字列を探ってみます。
+
+```
+% strings ./problem3_kakutake | grep flag
+That's flag
+```
+
+正解のときの文字列は入ってるようです。
+
 次に gdb コマンドで中身を見てみます。
 
 ```

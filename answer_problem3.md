@@ -153,7 +153,7 @@ rbp-0x10 から 9 バイト分の連続した領域の値を順に読み出し�
 (gdb) b *0x400545
 Breakpoint 1 at 0x400545
 (gdb) run
-Starting program: /root/20200124_CTF/./problem3_kakutake
+Starting program: /home/foo/./problem3_kakutake
 
 Breakpoint 1, 0x0000000000400545 in main ()
 Missing separate debuginfos, use: debuginfo-install glibc-2.17-292.el7.x86_64

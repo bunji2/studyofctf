@@ -193,37 +193,26 @@ That's flag
 
 見事 "That's flag" が表示されました。
 
-上記の一連の作業を自動化するシェルスクリプト resolv.sh を書いてみます。
+上記の一連の作業を自動化する gdb コマンドリスト resolv.txt を書いてみます。
 
 ```
-% vi resolv.sh
-
-(
-        echo 'b *0x400545';
-        echo run;
-        echo 'set {int}($rbp-0x10)=0x67616c66';
-        echo 'set {int}($rbp-0x10+4)=0x5959597b';
-        echo 'set {int}($rbp-0x10+4+4)=0x0000007d';
-        echo c;
-) | gdb ./problem3_kakutake
+% vi reslv.txt
+b *0x400545
+run
+set {int}($rbp-0x10)=0x67616c66
+set {int}($rbp-0x10+4)=0x5959597b
+set {int}($rbp-0x10+4+4)=0x0000007d
+c
+quit
 ```
 
 （他の環境では 0x400545 のところは別のアドレスになるかもしれません）
 
-実行して "That's flag" を表示させます。
+バッチ実行して "That's flag" を表示させます。
 
 ```
-% sh ./resolv.sh
-…省略…
-(gdb) Breakpoint 1 at 0x400545
-(gdb) Starting program: /home/foo/./problem3_kakutake
-
-Breakpoint 1, 0x0000000000400545 in main ()
-Missing separate debuginfos, use: debuginfo-install glibc-2.17-292.el7.x86_64
-(gdb) (gdb) (gdb) (gdb) Continuing.
+% gdb -x ./resolv.txt --batch-silent ./problem3-kakutake
 That's flag
-[Inferior 1 (process 1395) exited normally]
-(gdb) quit
 ```
 
 以上

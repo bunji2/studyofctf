@@ -5,6 +5,9 @@
 ```
 % uname -a
 Linux iserlohn 3.10.0-1062.9.1.el7.x86_64 #1 SMP Fri Dec 6 15:49:49 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+
+% cat /etc/redhat-release
+CentOS Linux release 7.7.1908 (Core)
 ```
 
 まずは file コマンドにかけてみます。

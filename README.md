@@ -22,6 +22,8 @@ problems.7z は一部環境で正常に動作しないようなので problems2.
 
 ヒント：movzx→cmp→je の繰り返しに注目
 
+→[解](answer_problem3.md)
+
 ## problem4_kakutake
 
 実行して標準入力に正しいフラグを入力して "That's flag" を表示させて下さい。

@@ -208,7 +208,7 @@ That's flag
 上記の一連の作業を自動化する gdb コマンドリスト resolv.txt を書いてみます。
 
 ```
-% vi reslv.txt
+% vi reslov.txt
 b *0x400545
 run
 set {int}($rbp-0x10)=0x67616c66

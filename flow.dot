@@ -1,0 +1,97 @@
+# dot -Tpng -o flow.png flow.dot 
+
+digraph graph_name {
+    node [ style = filled, shape = box ]
+    n0x400545 [ label = "movzx  eax,BYTE PTR [rbp-0x10]", fillcolor="green" ];
+    n0x400549 [ label = "cmp    al,0x66", fillcolor="orange" ];
+    n0x40054b [ label = "je", fillcolor="skyblue" ];
+    n0x40054d [ label = "jmp" ];
+    n0x40054f [ label = "movzx  eax,BYTE PTR [rbp-0xf]", fillcolor="green" ];
+    n0x400553 [ label = "cmp    al,0x6c", fillcolor="orange" ];
+    n0x400555 [ label = "je", fillcolor="skyblue" ];
+    n0x400557 [ label = "jmp" ];
+   n0x400559 [ label = "movzx  eax,BYTE PTR [rbp-0xe]", fillcolor="green" ];
+   n0x40055d [ label = "cmp    al,0x61", fillcolor="orange" ];
+   n0x40055f [ label = "je", fillcolor="skyblue" ];
+   n0x400561 [ label = "jmp" ];
+   n0x400563 [ label = "movzx  eax,BYTE PTR [rbp-0xd]", fillcolor="green" ];
+   n0x400567 [ label = "cmp    al,0x67", fillcolor="orange" ];
+   n0x400569 [ label = "je", fillcolor="skyblue" ];
+   n0x40056b [ label = "jmp" ];
+   n0x40056d [ label = "movzx  eax,BYTE PTR [rbp-0xc]", fillcolor="green" ];
+   n0x400571 [ label = "cmp    al,0x7b", fillcolor="orange" ];
+   n0x400573 [ label = "je", fillcolor="skyblue" ];
+   n0x400575 [ label = "jmp" ];
+   n0x400577 [ label = "movzx  eax,BYTE PTR [rbp-0xb]", fillcolor="green" ];
+   n0x40057b [ label = "cmp    al,0x59", fillcolor="orange" ];
+   n0x40057d [ label = "je", fillcolor="skyblue" ];
+   n0x40057f [ label = "jmp" ];
+   n0x400581 [ label = "movzx  eax,BYTE PTR [rbp-0xa]", fillcolor="green" ];
+   n0x400585 [ label = "cmp    al,0x59", fillcolor="orange" ];
+   n0x400587 [ label = "je", fillcolor="skyblue" ];
+   n0x400589 [ label = "jmp" ];
+   n0x40058b [ label = "movzx  eax,BYTE PTR [rbp-0x9]", fillcolor="green" ];
+   n0x40058f [ label = "cmp    al,0x59", fillcolor="orange" ];
+   n0x400591 [ label = "je", fillcolor="skyblue" ];
+   n0x400593 [ label = "jmp" ];
+   n0x400595 [ label = "movzx  eax,BYTE PTR [rbp-0x8]", fillcolor="green" ];
+   n0x400599 [ label = "cmp    al,0x7d", fillcolor="orange" ];
+   n0x40059b [ label = "je", fillcolor="skyblue" ];
+   n0x40059d [ label = "jmp" ];
+
+    n0x40059f [ label = "mov    edi,0x400640", fillcolor="pink" ];
+    n0x4005a4 [ label = "call   0x400410 <puts@plt>", fillcolor="pink" ];
+
+    n0x4005a9 [ label = "mov    eax,0x0" ];
+    n0x4005ae [ label = "leave" ];
+    n0x4005af [ label = "ret" ];
+
+    n0x400545 -> n0x400549 -> n0x40054b;
+    n0x40054b -> n0x40054f [ label = "al == 0x66" ];
+    n0x40054b -> n0x40054d [ label = "al != 0x66" ];
+    n0x40054d -> n0x4005a9;
+
+    n0x40054f -> n0x400553 -> n0x400555;
+    n0x400555 -> n0x400559 [ label = "al == 0x6c" ];
+    n0x400555 -> n0x400557 [ label = "al != 0x6c" ];
+    n0x400557 -> n0x4005a9;
+
+    n0x400559 -> n0x40055d -> n0x40055f;
+    n0x40055f -> n0x400563 [label = "al == 0x61"];
+    n0x40055f -> n0x400561 [label = "al != 0x61"];
+    n0x400561 -> n0x4005a9;
+
+   n0x400563 -> n0x400567 -> n0x400569;
+   n0x400569 -> n0x40056d [label = "al == 0x67"];
+   n0x400569 -> n0x40056b [label = "al != 0x67"];
+   n0x40056b -> n0x4005a9;
+
+   n0x40056d -> n0x400571 -> n0x400573;
+   n0x400573 -> n0x400577 [ label = "al == 0x7b"];
+   n0x400573 -> n0x400575 [ label = "al != 0x7b"];
+   n0x400575 -> n0x4005a9;
+
+   n0x400577 -> n0x40057b -> n0x40057d;
+   n0x40057d -> n0x400581 [ label = "al == 0x59"];
+   n0x40057d -> n0x40057f [ label = "al != 0x59"];
+   n0x40057f -> n0x4005a9;
+
+   n0x400581 -> n0x400585 -> n0x400587;
+   n0x400587 -> n0x40058b [ label = "al == 0x59" ];
+   n0x400587 -> n0x400589 [ label = "al != 0x59" ];
+   n0x400589 -> n0x4005a9;
+
+   n0x40058b -> n0x40058f -> n0x400591;
+   n0x400591 -> n0x400595 [ label = "al == 0x59" ];
+   n0x400591 -> n0x400593 [ label = "al != 0x59" ];
+   n0x400593 -> n0x4005a9;
+
+   n0x400595 -> n0x400599 -> n0x40059b;
+   n0x40059b -> n0x40059f [ label = "al == 0x7d" ];
+   n0x40059b -> n0x40059d [ label = "al != 0x7d" ];
+   n0x40059d -> n0x4005a9;
+
+    n0x40059f -> n0x4005a4 -> n0x4005a9 -> n0x4005ae -> n0x4005af;
+
+
+}

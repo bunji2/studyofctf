@@ -1,5 +1,7 @@
 # problem3_kakutake の解
 
+答え：flag{YYY}
+
 私の使用した環境は以下のとおりです。
 
 ```

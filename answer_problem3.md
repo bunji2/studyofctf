@@ -228,7 +228,7 @@ quit
 バッチ実行して "That's flag" を表示させます。
 
 ```
-% gdb -x ./resolv.txt --batch-silent ./problem3-kakutake
+% gdb -x ./resolv.txt --batch-silent ./problem3_kakutake
 That's flag
 ```
 

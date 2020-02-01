@@ -36,11 +36,16 @@ problems.7z は一部環境で正常に動作しないようなので problems2.
 
 ヒント：入力された文字列を変換している。call に注目。
 
+→[解](answer_problem4.md)
+
 ## 動作環境
 
-多分、x86_64 の Linux 環境ならば動くのではないかと。。。
+多分、x86_64 の Linux 環境か Windows 環境ならば動くのではないかと。。。
 
 ## ビルド環境
 
 CentOS7 (x86_x64)
 GCC 4.8.5
+
+Windows7 Pro SP1 (x86_64)
+Msys2/Mingw64

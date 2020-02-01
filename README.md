@@ -1,6 +1,6 @@
 # 挑戦状！
 
-問題ファイル：[problems2_win.7z](https://github.com/bunji2/studyofctf/raw/master/problems2.7z) (Win x86_64 版)
+問題ファイル：[problems2_win.7z](https://github.com/bunji2/studyofctf/raw/master/problems2_win.7z) (Win x86_64 版)
 
 SHA256 digest = efd105640cd18ddce4ee3f27f615050feb18819e75cf50e621e7c0ca2d2b47f4
 
